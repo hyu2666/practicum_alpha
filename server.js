@@ -7,7 +7,7 @@ app.get('/index.html', function (req, res) {
    res.sendFile( __dirname + "/" + "index.html" );
 })
  
-var server = app.listen(8081, function () {
+var server = app.listen(8081, "127.0.0.1", function () {
  
   var host = server.address().address
   var port = server.address().port
